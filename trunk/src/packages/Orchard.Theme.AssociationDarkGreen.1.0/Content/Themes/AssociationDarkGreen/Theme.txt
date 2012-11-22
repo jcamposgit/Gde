@@ -1,0 +1,7 @@
+Name: Association Dark Green
+Author: continuum - rich media lab
+Website: http://www.continuum.tv
+Description: This theme is ideal for any kind of association, club, union, and more and is available in different, rich earth tones.
+(Deutsch: Dieses Theme ist ideal für jegliche Art von Verein, Klub, Vereinigung, etc. und ist in verschiedenen, kräftigen Erdtönen verfügbar.)
+Version: 1.0                    
+Tags: cms, simple, association, club, union, society, community, alliance, collective, member, people, green
