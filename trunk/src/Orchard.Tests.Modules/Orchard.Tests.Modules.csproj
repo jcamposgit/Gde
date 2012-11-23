@@ -60,7 +60,7 @@
       <HintPath>..\..\lib\autofac\Autofac.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core">
-      <HintPath>..\..\lib\Castle Windsor 2.0\bin\Castle.Core.dll</HintPath>
+      <HintPath>..\..\lib\Castle Windsor 2.0\lib\Castle.Core.dll</HintPath>
     </Reference>
     <Reference Include="ClaySharp">
       <HintPath>..\..\lib\claysharp\ClaySharp.dll</HintPath>
