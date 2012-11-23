@@ -1,0 +1,16 @@
+﻿@model RelationSample.ViewModels.EditSponsorViewModel
+<fieldset>
+  <legend>Sponsor</legend>
+  <div class="editor-field">
+    @Html.DropDownListFor(model => model.SponsorId,
+        Model.Customers
+			.Where(c => c.Id != Model.CustomerId)
+			.Select(c => new SelectListItem {
+				Selected = c.Id == Model.SponsorId,
+				Text = c.Name,
+				Value = c.Id.ToString()
+			}),
+        "Choose a customer...")
+    @Html.ValidationMessageFor(model => model.SponsorId)
+  </div>
+</fieldset>
