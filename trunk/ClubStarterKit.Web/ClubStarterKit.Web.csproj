@@ -335,12 +335,6 @@
     <Content Include="Content\PageJavascript\PollResults.js" />
     <Content Include="Content\PageJavascript\ProfileEdit.js" />
     <Content Include="Content\Uploads\Downloads\placeholder.txt" />
-    <Content Include="Content\Uploads\Photos\accept.png" />
-    <Content Include="Content\Uploads\Photos\add.png" />
-    <Content Include="Content\Uploads\Photos\anchor.png" />
-    <Content Include="Content\Uploads\Photos\application.png" />
-    <Content Include="Content\Uploads\Photos\bin.png" />
-    <Content Include="Content\Uploads\Photos\book.png" />
     <Content Include="Global.asax" />
     <Content Include="Views\Blog\DisplayTemplates\CommentsView.ascx" />
     <Content Include="Views\Blog\DisplayTemplates\PagedBlogPosts.ascx" />
@@ -409,7 +403,9 @@
     <Content Include="Views\Shared\Site.Master" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Content\Uploads\Photos\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ClubStarterKit.Core\ClubStarterKit.Core.csproj">
       <Project>{E3787357-9DF8-4470-A931-1688C53EAB2E}</Project>
