@@ -26,7 +26,7 @@ using ClubStarterKit.Infrastructure.Routing;
 
 namespace ClubStarterKit.Web
 {
-    public class CskApplication : HttpApplication
+    public class CskApplication2 : HttpApplication
     {
         protected void Application_Start()
         {
@@ -51,7 +51,7 @@ namespace ClubStarterKit.Web
             routes.IgnoreRoute("favicon.ico");
 
             // register routes from the registrants
-            new BinPartLoader<IRouteRegistrant>().WithAssemblyOf<CskApplication>()
+            new BinPartLoader<IRouteRegistrant>().WithAssemblyOf<CskApplication2>()
                                                  .Items
                                                  .Foreach(r => r.Register(routes));
 
