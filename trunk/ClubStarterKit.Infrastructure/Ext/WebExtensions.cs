@@ -1,0 +1,44 @@
+﻿#region license
+
+//Copyright 2009 Zack Owens
+
+//Licensed under the Microsoft Public License (Ms-PL) (the "License"); 
+//you may not use this file except in compliance with the License. 
+//You may obtain a copy of the License at 
+
+//http://clubstarterkit.codeplex.com/license
+
+//Unless required by applicable law or agreed to in writing, software 
+//distributed under the License is distributed on an "AS IS" BASIS, 
+//WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+//See the License for the specific language governing permissions and 
+//limitations under the License. 
+
+#endregion
+
+using System.IO;
+using System.Net;
+
+namespace ClubStarterKit.Infrastructure.Ext
+{
+    public static class WebExtensions
+    {
+        /// <summary>
+        /// Downloads the result from a given URL string
+        /// </summary>
+        /// <param name="url"></param>
+        /// <returns>Text result from a Web Request</returns>
+        public static string DownloadFromWeb(this string url)
+        {
+            string webPage;
+            WebRequest request = WebRequest.Create(url);
+            using (Stream stream = request.GetResponse().GetResponseStream())
+            {
+                var sr = new StreamReader(stream);
+                webPage = sr.ReadToEnd();
+                sr.Close();
+            }
+            return webPage;
+        }
+    }
+}

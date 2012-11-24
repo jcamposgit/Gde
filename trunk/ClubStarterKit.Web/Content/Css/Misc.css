@@ -1,0 +1,24 @@
+﻿.error
+{
+    background-color: #A81F1F;
+    border-color: #6B0B0B;
+}
+
+a.rss-link
+{
+    position: relative;
+    float: right;   
+    border-style: none; 
+}
+
+a.rss-link img
+{
+    border-style: none;        
+}
+
+div.loading
+{
+    height: 64px;
+    width: 64px;
+    background-image: url(loading);
+}

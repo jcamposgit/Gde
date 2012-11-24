@@ -1,0 +1,61 @@
+﻿body
+{
+    font-family: Tahoma, Verdana, Helvetica, Helvetica-Narrow, sans-serif;
+    margin: 0px;
+    background-image: url(background_main);
+    background-position: center top;
+    background-repeat: repeat-y;
+    background-color: #FED36B;
+    font-size: 0.7em;
+}
+a:link
+{
+    color: #8A3700;
+}
+a:visited
+{
+    color: #542100;
+}
+a:hover
+{
+    text-decoration: none;
+    color: #A45521;
+}
+a:active
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+input, select, textarea
+{
+    font-size:1.7em; 
+    font-family: arial, Verdana, Helvetica, Helvetica-Narrow, sans-serif;
+    border: 2px solid #FED36B;
+    background-color: #FDFFAB;
+    padding: 5px 10px;
+}
+
+input[type="text"], input[type="password"]
+{
+    width: 85%;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+   margin: 2px 0 2px 0;
+}
+
+h1
+{
+    font-size: 28px;
+    font-weight: bold;
+   margin: 5px 0 5px 0;
+}
+
+
+h1 a:link, h1 a:visited, h1 a:hover, h1 a:active
+{
+    text-decoration: none;
+    color: #000000;
+}

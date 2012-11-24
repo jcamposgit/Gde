@@ -1,0 +1,5 @@
+﻿#poll li, #poll ul
+{
+     list-style: none;
+     padding: 0;       
+}
