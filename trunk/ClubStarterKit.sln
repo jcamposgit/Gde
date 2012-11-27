@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{2855414E-71F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C1769C82-83C0-4777-9E5D-3E9314B0A99D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubStarterKit.Web", "ClubStarterKit.Web\ClubStarterKit.Web.csproj", "{E07F85F6-4A4C-4732-A287-DB5197A2D1B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,6 +78,16 @@ Global
 		{58E73FBE-45B5-438A-B282-4E5FB806B24A}.Release|Mixed Platforms.Build.0 = Release|x86
 		{58E73FBE-45B5-438A-B282-4E5FB806B24A}.Release|x86.ActiveCfg = Release|x86
 		{58E73FBE-45B5-438A-B282-4E5FB806B24A}.Release|x86.Build.0 = Release|x86
+		{E07F85F6-4A4C-4732-A287-DB5197A2D1B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E07F85F6-4A4C-4732-A287-DB5197A2D1B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E07F85F6-4A4C-4732-A287-DB5197A2D1B9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E07F85F6-4A4C-4732-A287-DB5197A2D1B9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E07F85F6-4A4C-4732-A287-DB5197A2D1B9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E07F85F6-4A4C-4732-A287-DB5197A2D1B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E07F85F6-4A4C-4732-A287-DB5197A2D1B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E07F85F6-4A4C-4732-A287-DB5197A2D1B9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E07F85F6-4A4C-4732-A287-DB5197A2D1B9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E07F85F6-4A4C-4732-A287-DB5197A2D1B9}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,5 +97,6 @@ Global
 		{0D986308-C406-459A-A43C-5B5C92CE01E2} = {18290794-79E4-4F85-9DC5-0ACC3C943CEE}
 		{40296B67-0E5C-4DFA-B9B0-1F4D4427C187} = {5C2E5C3E-53BC-43C2-B52F-5F9CA8CA07F3}
 		{58E73FBE-45B5-438A-B282-4E5FB806B24A} = {5C2E5C3E-53BC-43C2-B52F-5F9CA8CA07F3}
+		{E07F85F6-4A4C-4732-A287-DB5197A2D1B9} = {2855414E-71FA-425D-BE9A-AAB9AF9DFC7F}
 	EndGlobalSection
 EndGlobal
