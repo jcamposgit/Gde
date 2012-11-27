@@ -202,10 +202,6 @@
       <Project>{0D986308-C406-459A-A43C-5B5C92CE01E2}</Project>
       <Name>ClubStarterKit.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ClubStarterKit.Web\ClubStarterKit.Web.csproj">
-      <Project>{E07F85F6-4A4C-4732-A287-DB5197A2D1B9}</Project>
-      <Name>ClubStarterKit.Web</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
