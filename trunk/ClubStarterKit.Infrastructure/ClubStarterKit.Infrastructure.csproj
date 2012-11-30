@@ -84,11 +84,10 @@
     <Reference Include="System.Web.ApplicationServices">
       <HintPath>..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.ApplicationServices.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Dependencies\ASP.NET MVC\System.Web.Mvc.dll</HintPath>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
     </Reference>
     <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>

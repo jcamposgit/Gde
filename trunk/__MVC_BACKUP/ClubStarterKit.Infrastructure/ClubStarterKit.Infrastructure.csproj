@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D986308-C406-459A-A43C-5B5C92CE01E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClubStarterKit.Infrastructure</RootNamespace>
+    <AssemblyName>ClubStarterKit.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ClubStarterKit.Infrastructure.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ClubStarterKit.Infrastructure.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="StructureMap, Version=2.5.3.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\StructureMap\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.ApplicationServices">
+      <HintPath>..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.ApplicationServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\ASP.NET MVC\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="ActionResults\AjaxDeterministicResult.cs" />
+    <Compile Include="ActionResults\ImageResult.cs" />
+    <Compile Include="ActionResults\RssResult.cs" />
+    <Compile Include="Application\Helpers.cs" />
+    <Compile Include="Application\IApplicationIdProvider.cs" />
+    <Compile Include="Application\SimpleApplicationIdProvider.cs" />
+    <Compile Include="BaseController.cs" />
+    <Compile Include="BinDirectoryCatalog.cs" />
+    <Compile Include="BinPartLoader.cs" />
+    <Compile Include="Cache\CacheBase.cs" />
+    <Compile Include="Cache\CacheKeyStore.cs" />
+    <Compile Include="Cache\CacheWrapper.cs" />
+    <Compile Include="Cache\CollectionDataCache.cs" />
+    <Compile Include="Cache\HttpCacheBase.cs" />
+    <Compile Include="Cache\HttpSessionCacheBase.cs" />
+    <Compile Include="Cache\PagedDataCache.cs" />
+    <Compile Include="Cache\SingleItemDataCache.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Content\ContentConstants.cs" />
+    <Compile Include="Content\ContentController.cs" />
+    <Compile Include="Content\ContentResetRegistrant.cs" />
+    <Compile Include="Content\Css\ContentController.cs" />
+    <Compile Include="Content\Css\CssRouteRegistrant.cs" />
+    <Compile Include="Content\Css\CssContentAggrigator.cs" />
+    <Compile Include="Content\Css\CssMinifier.cs" />
+    <Compile Include="Content\Css\HtmlHelperExt.cs" />
+    <Compile Include="Content\Css\ICssTransformer.cs" />
+    <Compile Include="Content\IContentAggregator.cs" />
+    <Compile Include="Content\Images\ContentController.cs" />
+    <Compile Include="Content\Images\HtmlHelperExt.cs" />
+    <Compile Include="Content\Images\ImageContentAggrigator.cs" />
+    <Compile Include="Content\Images\ImageRouteRegistrant.cs" />
+    <Compile Include="Content\Images\SiteImageTransformer.cs" />
+    <Compile Include="Content\Images\SpriteTransformer.cs" />
+    <Compile Include="Content\Images\WebsiteImage.cs" />
+    <Compile Include="Content\Images\WebsiteImageCollection.cs" />
+    <Compile Include="Content\Javascript\ContentControllerExt.cs" />
+    <Compile Include="Content\Javascript\JavaScriptRouteRegistrant.cs" />
+    <Compile Include="Content\Javascript\HtmlHelperExt.cs" />
+    <Compile Include="Content\Javascript\Additions\IJavaScriptAddition.cs" />
+    <Compile Include="Content\Javascript\JavaScriptContentAggrigator.cs" />
+    <Compile Include="Content\Javascript\JavaScriptFile.cs" />
+    <Compile Include="Content\Javascript\JavaScriptMinifier.cs" />
+    <Compile Include="Content\Javascript\JavaScriptSorter.cs" />
+    <Compile Include="Content\Javascript\Additions\OnlineJavascriptAddition.cs" />
+    <Compile Include="Content\PageJavascript\ContentControllerExt.cs" />
+    <Compile Include="Content\PageJavascript\PageJavascriptContentAggrigator.cs" />
+    <Compile Include="Content\PageJavascript\PageJavascriptFile.cs" />
+    <Compile Include="Content\PageJavascript\PageJavascriptRegistrant.cs" />
+    <Compile Include="Content\PageJavascript\PageJsExt.cs" />
+    <Compile Include="Content\SiteContentUtils.cs" />
+    <Compile Include="ControllerFactoryBootstrapper.cs" />
+    <Compile Include="DefaultSpecificationBootstrapper.cs" />
+    <Compile Include="Ext\ControllerExt.cs" />
+    <Compile Include="Ext\FileExt.cs" />
+    <Compile Include="Ext\HttpContextExt.cs" />
+    <Compile Include="Ext\HtmlHelperExt.cs" />
+    <Compile Include="Ext\MvcHtmlStringHelper.cs" />
+    <Compile Include="Ext\WebExtensions.cs" />
+    <Compile Include="IPasswordCryptographyProvider.cs" />
+    <Compile Include="ISiteConfigProvider.cs" />
+    <Compile Include="NotifiableDataAction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Routing\Helper.cs" />
+    <Compile Include="Routing\IRouteRegistrant.cs" />
+    <Compile Include="Routing\LeagacyRouteHandler.cs" />
+    <Compile Include="Routing\LegacyHandler.cs" />
+    <Compile Include="Routing\LegacyRoute.cs" />
+    <Compile Include="Routing\LowercaseRoute.cs" />
+    <Compile Include="Routing\MapLowercaseRoute.cs" />
+    <Compile Include="Routing\NotAnyConstraint.cs" />
+    <Compile Include="Routing\NotEmptyConstraint.cs" />
+    <Compile Include="Routing\NotInteger.cs" />
+    <Compile Include="Routing\WwwHandler.cs" />
+    <Compile Include="Routing\WwwReasignment.cs" />
+    <Compile Include="Routing\WwwRouteHandler.cs" />
+    <Compile Include="StructuremapControllerFactory.cs" />
+    <Compile Include="UI\AsyncForm\AjaxAsyncHelpers.cs" />
+    <Compile Include="UI\AsyncForm\AjaxReturnType.cs" />
+    <Compile Include="UI\AsyncForm\AsyncFormBuilder.cs" />
+    <Compile Include="UI\AsyncForm\AsyncFormOptions.cs" />
+    <Compile Include="UI\AsyncForm\AsyncFormType.cs" />
+    <Compile Include="UI\Calendar\CalendarDay.cs" />
+    <Compile Include="UI\Calendar\CalendarMonth.cs" />
+    <Compile Include="UI\Calendar\CalendarService.cs" />
+    <Compile Include="UI\Calendar\CalendarWeek.cs" />
+    <Compile Include="UI\Calendar\ICalendarEvent.cs" />
+    <Compile Include="UI\Calendar\ICalendarEventService.cs" />
+    <Compile Include="UI\Calendar\IEventImporter.cs" />
+    <Compile Include="UI\Calendar\LinkParser.cs" />
+    <Compile Include="UI\Html\DisplayForListExt.cs" />
+    <Compile Include="UI\Html\HiddenForHelper.cs" />
+    <Compile Include="UI\PagedList\HiddenNumeredPageLink.cs" />
+    <Compile Include="UI\PagedList\HtmlHelperExt.cs" />
+    <Compile Include="UI\PagedList\IPagedLink.cs" />
+    <Compile Include="UI\PagedList\ListDeliminator.cs" />
+    <Compile Include="UI\PagedList\NextPageLink.cs" />
+    <Compile Include="UI\PagedList\NumberedPageLink.cs" />
+    <Compile Include="UI\PagedList\PagerList.cs" />
+    <Compile Include="UI\PagedList\PreviousPageLink.cs" />
+    <Compile Include="View\BaseControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\BaseControl`1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\BaseView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\BaseViewHelper.cs" />
+    <Compile Include="View\BaseViewMaster.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\BaseView`1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClubStarterKit.Core\ClubStarterKit.Core.csproj">
+      <Project>{E3787357-9DF8-4470-A931-1688C53EAB2E}</Project>
+      <Name>ClubStarterKit.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

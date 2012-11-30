@@ -1,0 +1,16 @@
+﻿.commentGravatar, .sidecard
+{
+    float: left;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.commentText
+{
+    padding-left: 40px;
+}
+
+textarea#commentText
+{
+    width: 90%;
+}
