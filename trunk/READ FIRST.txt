@@ -90,3 +90,4 @@ section at the top of the screen. Now edit the "values". Do not alter the keys.
 - NHibernate repository "delete" is buggy
 
 Happy developing!
+alterado
