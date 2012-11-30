@@ -34,9 +34,9 @@ namespace ClubStarterKit.Web
 
             // run the bootsrap method on all the bootstrappers
             //new BinPartLoader<IBootstrapper>().WithAssemblyOf(this)
-            new BinPartLoader<IBootstrapper>().WithAssemblyOf(this)
-                                              .Items
-                                              .Foreach(i => i.Bootstrap());
+            //new BinPartLoader<IBootstrapper>().WithAssemblyOf(this)
+            //                                  .Items
+            //                                  .Foreach(i => i.Bootstrap());
 
             // Uncomment this line *ON YOUR FIRST RUN* to hydrate the database wtih tables
              //new ClubStarterKit.Data.NHibernate.NHDataProvider(new ClubStarterKit.Web.Infrastructure.Application.SessionBuilder()).Hydrate();
@@ -51,9 +51,9 @@ namespace ClubStarterKit.Web
             routes.IgnoreRoute("favicon.ico");
 
             // register routes from the registrants
-            new BinPartLoader<IRouteRegistrant>().WithAssemblyOf<CskApplication>()
-                                                 .Items
-                                                 .Foreach(r => r.Register(routes));
+            //new BinPartLoader<IRouteRegistrant>().WithAssemblyOf<CskApplication>()
+            //                                     .Items
+            //                                     .Foreach(r => r.Register(routes));
 
             // because this mapping needs to be last
             // this mapping MUST be after all registrant 
