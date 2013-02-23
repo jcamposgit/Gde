@@ -1,0 +1,12 @@
+Name: Default
+DataProvider: SqlServer
+DataConnectionString: Server=9786f7c9-224b-4143-8129-a11200bda1aa.sqlserver.sequelizer.com;Database=db9786f7c9224b41438129a11200bda1aa;User ID=bizgkbnrattimbbr;Password=SEghWZLUbouGkwwMEzLSuFKoBWeqogZN5x2h7eSkPinkR7CLxiXdzsum42N8UvF4
+DataPrefix: club
+RequestUrlHost: null
+RequestUrlPrefix: null
+State: Running
+EncryptionAlgorithm: AES
+EncryptionKey: 9B841F8D0C1BB384A16EFA7EDDC44BEEA32F201090A7017EBADCAACD26E48543
+HashAlgorithm: HMACSHA256
+HashKey: 667CE2B19351630E84FE95FD827C3D5A65F9C11024DD9B24655391A8230D990C41DCBEE891C5ADF6413EB223499C288A23B8A7731CCEFD06AADECEB010DAE5B6
+Themes: 

@@ -1,0 +1,19 @@
+﻿@model RelationSample.ViewModels.EditRewardsViewModel
+<fieldset><legend>@T("Rewards")</legend>
+<ul>
+@{
+ var rewardIndex = 0;
+}
+@foreach (var reward in Model.Rewards) {
+    <li><input type="hidden" value="@reward.RewardProgram.Id" name="@Html.FieldNameFor(m => m.Rewards[rewardIndex].RewardProgram.Id)"/>
+        <label for="@Html.FieldNameFor(m => m.Rewards[rewardIndex].IsChecked)">
+            <input type="checkbox" value="true"
+                name="@Html.FieldNameFor(m => m.Rewards[rewardIndex].IsChecked)"
+                id="@Html.FieldNameFor(m => m.Rewards[rewardIndex].IsChecked)"@if (reward.IsChecked) {<text>checked="checked"</text>}/>
+            @string.Format("{0} ({1:P1})", reward.RewardProgram.Name, -reward.RewardProgram.Discount)
+        </label>
+        @{rewardIndex++;}
+    </li>
+}
+</ul>
+</fieldset>

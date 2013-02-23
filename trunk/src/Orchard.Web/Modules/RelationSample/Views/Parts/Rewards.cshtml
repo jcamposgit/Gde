@@ -1,0 +1,6 @@
+﻿<h4>@T("Rewards"):</h4>
+<ul>
+@foreach (var reward in Model.Rewards) {
+    <li>@string.Format("{0} ({1:P1})", reward.Name,  -reward.Discount)</li>
+}
+</ul>
