@@ -1,0 +1,109 @@
+2013-02-28 11:36:08,359 [13] NHibernate.Util.ADOExceptionReporter - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2013-02-28 11:36:08,412 [13] NHibernate.Util.ADOExceptionReporter - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2013-02-28 11:36:08,414 [13] NHibernate.Util.ADOExceptionReporter - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2013-02-28 11:36:08,418 [13] Orchard.Tasks.BackgroundService - Error while processing background task
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ select scheduledt0_.Id as Id12_, scheduledt0_.TaskType as TaskType12_, scheduledt0_.ScheduledUtc as Schedule3_12_, scheduledt0_.ContentItemVersionRecord_id as ContentI4_12_ from club_Scheduling_ScheduledTaskRecord scheduledt0_ where scheduledt0_.ScheduledUtc<=? ]
+  Name:p1 - Value:28-02-2013 11:35:48
+[SQL: select scheduledt0_.Id as Id12_, scheduledt0_.TaskType as TaskType12_, scheduledt0_.ScheduledUtc as Schedule3_12_, scheduledt0_.ContentItemVersionRecord_id as ContentI4_12_ from club_Scheduling_ScheduledTaskRecord scheduledt0_ where scheduledt0_.ScheduledUtc<=?] ---> System.Data.SqlClient.SqlException: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSni(DbAsyncResult asyncResult, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParserStateObject.ReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.ReadBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.ReadByte()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlDelegatedTransaction.Initialize()
+   at System.Transactions.TransactionStatePSPEOperation.PSPEInitialize(InternalTransaction tx, IPromotableSinglePhaseNotification promotableSinglePhaseNotification)
+   at System.Transactions.TransactionStateActive.EnlistPromotableSinglePhase(InternalTransaction tx, IPromotableSinglePhaseNotification promotableSinglePhaseNotification, Transaction atomicTransaction)
+   at System.Transactions.Transaction.EnlistPromotableSinglePhase(IPromotableSinglePhaseNotification promotableSinglePhaseNotification)
+   at System.Data.SqlClient.SqlInternalConnection.EnlistNonNull(Transaction tx)
+   at System.Data.SqlClient.SqlInternalConnection.Enlist(Transaction tx)
+   at System.Data.SqlClient.SqlInternalConnectionTds.Activate(Transaction transaction)
+   at System.Data.ProviderBase.DbConnectionInternal.ActivateConnection(Transaction transaction)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Hql.Ast.ANTLR.Loader.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   at NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
+   at NHibernate.Impl.AbstractSessionImpl.List(IQueryExpression queryExpression, QueryParameters parameters)
+   at NHibernate.Impl.ExpressionQueryImpl.List()
+   at NHibernate.Linq.DefaultQueryProvider.ExecuteQuery(NhLinqExpression nhLinqExpression, IQuery query, NhLinqExpression nhQuery)
+   at NHibernate.Linq.DefaultQueryProvider.Execute(Expression expression)
+   at NHibernate.Linq.DefaultQueryProvider.Execute[TResult](Expression expression)
+   at Remotion.Linq.QueryableBase`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Orchard.Utility.Extensions.ReadOnlyCollectionExtensions.ToReadOnlyCollection[T](IEnumerable`1 enumerable) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Utility\Extensions\ReadOnlyCollectionExtensions.cs:line 8
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Fetch(Expression`1 predicate) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\Repository.cs:line 72
+   at Orchard.Core.Scheduling.Services.ScheduledTaskExecutor.Sweep() in c:\Users\sebros\My Projects\Orchard\src\Orchard.Web\Core\Scheduling\Services\ScheduledTaskExecutor.cs:line 36
+   at Orchard.Tasks.BackgroundService.Sweep() in c:\Users\sebros\My Projects\Orchard\src\Orchard\Tasks\BackgroundService.cs:line 31
+2013-02-28 11:36:24,592 [13] NHibernate.Util.ADOExceptionReporter - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2013-02-28 11:36:24,593 [13] NHibernate.Util.ADOExceptionReporter - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2013-02-28 11:36:24,594 [13] NHibernate.Util.ADOExceptionReporter - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2013-02-28 11:36:24,595 [13] Orchard.Tasks.BackgroundService - Error while processing background task
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT this_.Id as Id28_4_, this_.Number as Number28_4_, this_.Published as Published28_4_, this_.Latest as Latest28_4_, this_.Data as Data28_4_, this_.ContentItemRecord_id as ContentI6_28_4_, titlepartr3_.Id as Id70_0_, titlepartr3_.Title as Title70_0_, titlepartr3_.ContentItemRecord_id as ContentI3_70_0_, contentite1_.Id as Id27_1_, contentite1_.Data as Data27_1_, contentite1_.ContentType_id as ContentT3_27_1_, blogpartre2_.Id as Id46_2_, blogpartre2_.Description as Descript2_46_2_, blogpartre2_.PostCount as PostCount46_2_, contenttyp8_.Id as Id29_3_, contenttyp8_.Name as Name29_3_ FROM club_Orchard_Framework_ContentItemVersionRecord this_ inner join club_Title_TitlePartRecord titlepartr3_ on this_.Id=titlepartr3_.Id inner join club_Orchard_Framework_ContentItemRecord contentite1_ on this_.ContentItemRecord_id=contentite1_.Id inner join club_Orchard_Blogs_BlogPartRecord blogpartre2_ on contentite1_.Id=blogpartre2_.Id left outer join club_Orchard_Framework_ContentTypeRecord contenttyp8_ on contentite1_.ContentType_id=contenttyp8_.Id WHERE this_.Published = ? ORDER BY titlepartr3_.Title asc ]
+  Name:cp0 - Value:True
+[SQL: SELECT this_.Id as Id28_4_, this_.Number as Number28_4_, this_.Published as Published28_4_, this_.Latest as Latest28_4_, this_.Data as Data28_4_, this_.ContentItemRecord_id as ContentI6_28_4_, titlepartr3_.Id as Id70_0_, titlepartr3_.Title as Title70_0_, titlepartr3_.ContentItemRecord_id as ContentI3_70_0_, contentite1_.Id as Id27_1_, contentite1_.Data as Data27_1_, contentite1_.ContentType_id as ContentT3_27_1_, blogpartre2_.Id as Id46_2_, blogpartre2_.Description as Descript2_46_2_, blogpartre2_.PostCount as PostCount46_2_, contenttyp8_.Id as Id29_3_, contenttyp8_.Name as Name29_3_ FROM club_Orchard_Framework_ContentItemVersionRecord this_ inner join club_Title_TitlePartRecord titlepartr3_ on this_.Id=titlepartr3_.Id inner join club_Orchard_Framework_ContentItemRecord contentite1_ on this_.ContentItemRecord_id=contentite1_.Id inner join club_Orchard_Blogs_BlogPartRecord blogpartre2_ on contentite1_.Id=blogpartre2_.Id left outer join club_Orchard_Framework_ContentTypeRecord contenttyp8_ on contentite1_.ContentType_id=contenttyp8_.Id WHERE this_.Published = ? ORDER BY titlepartr3_.Title asc] ---> System.Data.SqlClient.SqlException: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSni(DbAsyncResult asyncResult, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParserStateObject.ReadNetworkPacket()
+   at System.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(Boolean encrypt, Boolean trustServerCert, Boolean& marsCapable)
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List[T]()
+   at Orchard.ContentManagement.DefaultContentQuery.Slice(Int32 skip, Int32 count) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 146
+   at Orchard.ContentManagement.DefaultContentQuery.ContentQuery`1.Orchard.ContentManagement.IContentQuery<T>.List() in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 191
+   at Orchard.Blogs.Services.BlogService.Get(VersionOptions versionOptions)
+   at Orchard.Blogs.Services.BlogService.Get()
+   at Orchard.Blogs.Routing.BlogPathConstraintUpdator.Refresh()
+   at Orchard.Blogs.Routing.BlogPathConstraintUpdator.Orchard.Tasks.IBackgroundTask.Sweep()
+   at Orchard.Tasks.BackgroundService.Sweep() in c:\Users\sebros\My Projects\Orchard\src\Orchard\Tasks\BackgroundServ

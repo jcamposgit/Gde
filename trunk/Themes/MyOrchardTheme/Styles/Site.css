@@ -1,0 +1,160 @@
+﻿/*
+Theme: My First Theme
+Author: 
+Copyright: 
+*/
+
+/* Colors Palette
+Background: #d3d3d3
+Text: #000
+Main Accent: #999
+Links: #c03
+*/
+
+/* General
+***************************************************************/
+body {
+    background-color: #FED36B;
+    background-image: url(background_main.jpg);
+    background-position: center top;
+    background-repeat: repeat-y;
+    font-family: Tahoma,Verdana,Helvetica,Helvetica-Narrow,sans-serif;
+    font-size: 0.7em;
+    margin: 0;
+}
+
+
+
+#header {
+    width:100%;
+    height:128px;
+}
+
+#branding {
+    background-image: url(poster.jpg);
+    background-repeat: no-repeat;
+    height: 139px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    width: 726px;
+}
+
+#branding h1{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Structure
+***************************************************************/
+
+#layout-navigation ,#navbottom
+{
+    background-image: url(background_nav_main.gif);
+    background-repeat: no-repeat;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Verdana, Helvetica, Helvetica-Narrow, Tahoma, sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+    width: 726px;
+    height: 45px;
+}
+
+#layout-navigation ul, #navbottom ul
+{
+    margin: 0px;
+    padding-top: 9px;
+    list-style-type: none;
+    height: 19px;
+    text-align: center;
+}
+
+#layout-navigation ul li, #navbottom ul li
+{
+    display: inline;
+    color: #FFFFFF;
+    margin-right: 25px;
+}
+
+#layout-navigation a:link, #navbottom a:link, #layout-navigation a:visited, #navbottom a:visited
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+##layout-navigation a:hover, #navbottom a:hover
+{
+    text-decoration: underline;
+}
+
+##layout-navigation a:active, #navbottom a:active
+{
+    color: #FEFFBD;
+    text-decoration: none;
+}
+
+#footer
+{
+    width: 726px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 22px;
+    color: #C89F3D;
+}
+
+.user-display
+{
+    margin-left: 580px;
+    margin-top:-19px;
+    position: relative;
+    }
+
+/* Main
+***************************************************************/
+#layout-main-container {
+    width: 726px;
+    margin-top: 7px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+#aside-first
+{
+    float: left;
+    width: 240px;    
+    border: 1px solid #DBDB79;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-image: url(background_columnleft.gif);
+    background-color: #FEFAAB;
+    background-repeat:repeat-y;
+    vertical-align: top;
+}
+
+#layout-content
+{
+    margin-left: 245px;
+    border: 1px solid #DBDB79;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-image: url(background_columnright.gif);
+    background-repeat: repeat-y;
+    background-color: #FEFFAB;
+    position: relative;
+    width:446px;
+}
+
+
+/* Secondary
+***************************************************************/
+
+/* Forms
+***************************************************************/
+
+/* Misc
+***************************************************************/
